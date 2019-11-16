@@ -1,0 +1,259 @@
+
+body {
+    background-color: blanchedalmond;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+    font-size: 220px;
+    margin: 100px
+}
+
+#logo{
+    padding-top: 200px;
+}
+
+.question{
+    padding-top: 400px;
+} 
+#denim-question .question{
+    padding-top: 200px;
+}
+
+#solve-container, #cthulu-yes-container {
+    margin: auto;
+    text-align: center;
+}
+
+#solve {
+    width: 600px;
+}
+
+#cthulu-yes {
+    width: 400px;
+    margin-top: 70px;
+}
+
+#solve, #cthulu-yes  {
+ font-size: 64px;
+ font-weight: 650;
+ padding: 10px;
+ background-color: blanchedalmond;
+ color: #251800;
+ border-style: solid;
+ border-color: #251800;
+ border-width: 12px;
+}
+
+#solve:hover, #cthulu-yes:hover {
+    background-color: #251800;
+    color: blanchedalmond;
+}
+
+#solve:focus, #cthulu-yes:focus{
+    outline: 0;
+}
+
+section {
+    text-align: center;
+    margin: 40px;
+}
+
+section form {
+    text-align: left;
+    width: 30%;
+    margin: auto;
+}
+
+.denim {
+    margin: auto; 
+     width: 600px;
+}
+
+.denim{
+border-color: #251800;
+ font-size: 42px;
+ font-weight: 650;
+ padding: 20px;
+ background-color: blanchedalmond;
+ border-width: 0px;
+ border-left-width: 10px;
+ border-right-width: 10px;
+ border-style: solid;
+}
+
+.denim-top{
+    border-top-width: 10px;
+}
+
+.denim-bottom{
+    border-bottom-width: 10px;
+}
+
+.denim:hover{
+    background-color: #251800;
+    color: blanchedalmond;
+    border-color:#251800;
+}
+
+.denim-selected{
+    color:#251800;
+    background-color: #ffcc80;
+   
+}
+
+.denim-selected:hover{
+    color:#251800;
+    background-color: #ffcc80;
+}
+
+.question {
+    width: 100%;
+    color:#251800;
+    font-size: 48px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.question .left-arrow, .question .right-arrow{
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    width: 100px;
+    position: absolute;
+}
+.question .left-arrow{
+    border-right: 300px solid #251800;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    right: 110%;
+}
+
+.question .right-arrow{
+    border-left: 300px solid #251800;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    left: 110%;
+}
+
+.question .literal {
+    position: relative;
+    margin: auto;
+    width: 20%;
+    text-align: center;
+    font-weight: 900;
+}
+
+.bloodtype-container{
+    width: 30%;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 50px;
+}
+
+.bloodtype{
+    width: 100%;
+    margin: auto;
+    padding: 8px;
+    font-size: 38px;
+    border: 4px solid #251800; 
+    color:#251800;
+    background-color: #ffecec;
+}
+
+.bloodtype:focus{
+    outline-color: #6e0808;
+    outline-width: thick;
+    border-color: #4e0606;
+    background-color: #ffbcbc;
+    color:#4e0606;
+}
+
+#blood-question, #denim-question, #cthulu-question, #cage, #ticker-container, #void-container{
+    display: none;
+}
+
+@keyframes growLeft {
+    0%{
+        opacity: 1;
+        transform: translate(45%,-50%) scale(0.1,1.2);
+    }
+
+    10%{
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(-50%,-50%) scale(2,1);
+    }
+}
+
+@keyframes growRight {
+    0%{
+        opacity: 1;
+        transform: translate(-45%,-50%) scale(0.1,1.2);
+
+    }
+
+    10%{
+    }
+
+    100%{
+        opacity: 1;
+        transform: translate(50%,-50%) scale(2,1);
+    }
+}
+
+.question .left-arrow{
+    animation-duration: 6s;
+    animation-name: growLeft;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+.question .right-arrow{
+    animation-duration: 6s;
+    animation-name: growRight;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+}
+
+#ticker-container {
+    position: relative;
+    background-color: black;
+
+}
+#ticker {
+    overflow: hidden;
+    height: 900px;
+    width: 80%;
+    margin: auto;
+    margin-top:0;
+    margin-bottom: 300px;
+    background-color: black;
+    color: rgb(55, 95, 55);
+    padding: 25px;
+}
+
+.solving-text {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    font-size: 100px;
+    font-family: sans-serif;
+    padding:25px;
+    color: rgb(173, 157, 132);
+    position: absolute;
+    left: 10%;
+    top: 30%;
+}
+
+#grid {
+    background-color: black;
+    display: none;
+    margin: auto;
+    margin-bottom: 0;
+    width: 80%;
+}

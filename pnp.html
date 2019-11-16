@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="pnp.css">
+    </head>
+    <body>
+        <div id="intro">
+                
+            <div class="logo"> P = NP ?  </div>
+            <div id="solve-container">
+                <button id="solve">SOLVE</button>
+            </div>
+        </div>
+        <div id="blood-question" class="question">
+
+                <div class="literal one">
+                        <div class="left-arrow"></div>
+                        What is your blood type? 
+                        <div class="right-arrow"></div>
+                        
+                </div>
+                <div class="bloodtype-container">
+                    <input type="text" name="bloodtype" class="bloodtype" id="bloodtype-text">
+                </div>
+        </div>
+        
+        <div id="denim-question">
+            <div class="question">
+
+                    <div class="literal two">
+                        <div class="left-arrow"></div>
+                        Which style of denim do you prefer?
+                        <div class="right-arrow"></div>
+                    </div>
+            </div>
+            <div id=denimStylesContainer>
+
+                <section> 
+                    
+                    
+                        <div class="denim denim-top">Cheeky Straight</div>
+                        <div class="denim">Washed Black Pinstripe</div>
+                        <div class="denim">Mid Rise Perfect Boot</div>
+                        <div class="denim">Wedge High</div>
+                        <div class="denim">Ami Skinny</div>
+                        <div class="denim denim-bottom">Hybrid & Company Womens Super Comfy Stretch Low-Rise 5 Pocket</div>
+
+                </section>
+                
+            </div>
+        </div>
+        <div id="cthulu-question">
+            <div class="question">
+                <div class="literal three">
+                        <div class="left-arrow"></div>
+                        Do you swear absolute and everlasting fealty to the dark eye of Cthulu?
+                        <div class="right-arrow"></div>
+                </div>  
+            </div>
+
+            <div id="cthulu-yes-container">
+                <button id="cthulu-yes">YES</button>
+            </div>
+        </div>
+
+        <div id="ticker-container">
+            
+                <canvas id="grid" width="1600" height="800"></canvas>
+                <div class="solving-text">
+                    Solving
+                </div>
+                <div id="ticker">
+                </div>
+        </div>
+        <div id="void-container">
+
+        </div>
+
+        <script src="pnp.js"></script>
+        <script src="ticker.js"></script>
+        <script src="grid.js"></script>
+    </body>
+</html>
